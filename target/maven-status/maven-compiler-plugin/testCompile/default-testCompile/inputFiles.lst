@@ -1,0 +1,6 @@
+/Users/sharman/personal-workspace/rule-based-fraud-detection/src/test/java/org/grab/com/fraud/detector/rule/TestRuleNonHumanTransactions.java
+/Users/sharman/personal-workspace/rule-based-fraud-detection/src/test/java/org/grab/com/fraud/detector/rule/TestStatusCodeBasedRule.java
+/Users/sharman/personal-workspace/rule-based-fraud-detection/src/test/java/org/grab/com/fraud/detector/utils/MockitoProvider.java
+/Users/sharman/personal-workspace/rule-based-fraud-detection/src/test/java/org/grab/com/fraud/detector/rule/TestRuleCountryChange.java
+/Users/sharman/personal-workspace/rule-based-fraud-detection/src/test/java/org/grab/com/fraud/detector/rule/TestFraudulantAccountsRule.java
+/Users/sharman/personal-workspace/rule-based-fraud-detection/src/test/java/org/grab/com/fraud/detector/utils/TestIpToCountry.java

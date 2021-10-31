@@ -1,0 +1,3 @@
+minTimeBetweenTwoTranactionsSeconds: 10
+minTimeBetweenCountryChangeMinutes: 60
+invalidTransactionLimitPerAccount: 2

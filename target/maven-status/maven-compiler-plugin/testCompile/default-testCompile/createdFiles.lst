@@ -1,0 +1,6 @@
+org/grab/com/fraud/detector/rule/TestStatusCodeBasedRule.class
+org/grab/com/fraud/detector/utils/MockitoProvider.class
+org/grab/com/fraud/detector/rule/TestRuleNonHumanTransactions.class
+org/grab/com/fraud/detector/utils/TestIpToCountry.class
+org/grab/com/fraud/detector/rule/TestRuleCountryChange.class
+org/grab/com/fraud/detector/rule/TestFraudulantAccountsRule.class
