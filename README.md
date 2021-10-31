@@ -66,16 +66,22 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Download the zip file from: https://drive.google.com/file/d/1x7lSNmN7pSFFyvfIdnAY1UdT8bmQv9U9/view?usp=sharing
 2. Unzip the zip file
-   ```unzip grab-test.zip
    ```
-3. Make the build.sh executable
-   ```chmod
-   +x build.sh
+   unzip grab-test.zip
+   ```
+3. cd to grab-test folder and make the build.sh executable
+   ```
+   cd grab-test
+   ```
+   ```
+   chmod +x build.sh
    ```
 4. Execute build.sh with "-b y" option to build and execute or "-b n" for directly running jar.
    ```
    sh build.sh -b y
-   or
+   ```
+   OR
+   ```
    sh build.sh -b n
    ```
 
@@ -97,6 +103,6 @@ One sample data file is provided with the zip file and configured as default dat
 
 Nikhil Ashok Sharma - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Repo: [git@github.com:nikhilashoksharma/rule-based-fraud-detection.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
