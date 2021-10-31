@@ -101,7 +101,7 @@ One sample data file is provided with the zip file and configured as default dat
 <!-- CONTACT -->
 ## Contact
 
-Nikhil Ashok Sharma - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Nikhil Ashok Sharma -  nikhil.ashok.sharma@gmail.com
 
 Project Repo: [git@github.com:nikhilashoksharma/rule-based-fraud-detection.git)
 
