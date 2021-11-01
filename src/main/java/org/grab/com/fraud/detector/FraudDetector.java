@@ -16,14 +16,11 @@ import org.grab.com.fraud.detector.exceptions.InvalidArgumentException;
 import org.grab.com.fraud.detector.exceptions.InvalidArgumentLengthException;
 import org.grab.com.fraud.detector.model.Summary;
 import org.grab.com.fraud.detector.utils.ConfigurationManager;
+import org.grab.com.fraud.detector.utils.FilePaths;
 
 public class FraudDetector {
 
 	private static final Logger LOGGER = LogManager.getLogger();
-
-	private static final String SYSTEM_CONFIG_FILE_PATH = "/config/system_configuration.yaml";
-	
-	private static final String RULE_BOOK_FILE_PATH = "/config/rule_book";
 
 	private static final int expectedArgumentLength = 1;
 
@@ -34,10 +31,10 @@ public class FraudDetector {
 		checkArgumentLength(args);
 		
 		ConfigurationManager configurationManager = ConfigurationManager
-				.getInstance(FraudDetector.class.getResourceAsStream(SYSTEM_CONFIG_FILE_PATH));
+				.getInstance(FraudDetector.class.getResourceAsStream(FilePaths.SYSTEM_CONFIG_FILE_PATH));
 		
 		
-		Gatekeeper gatekeeper = new Gatekeeper(configurationManager, FraudDetector.class.getResourceAsStream(RULE_BOOK_FILE_PATH));
+		Gatekeeper gatekeeper = new Gatekeeper(configurationManager, FraudDetector.class.getResourceAsStream(FilePaths.RULE_BOOK_FILE_PATH));
 		
 		Summary summary = new Summary();
 		

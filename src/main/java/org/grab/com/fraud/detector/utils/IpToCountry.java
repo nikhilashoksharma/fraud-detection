@@ -1,10 +1,8 @@
 package org.grab.com.fraud.detector.utils;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetAddress;
-import java.net.URISyntaxException;
 
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
@@ -17,7 +15,7 @@ public class IpToCountry {
 	static {
 		
 		try {
-			InputStream database = IpToCountry.class.getClassLoader().getResourceAsStream("db/GeoLite2-Country.mmdb");
+			InputStream database = IpToCountry.class.getClassLoader().getResourceAsStream(FilePaths.MAXMIND_COUNTRY_DB_FILE_PATH);
 			dbReader = new DatabaseReader.Builder(database).build();
 		} catch (IOException e) {
 			e.printStackTrace();

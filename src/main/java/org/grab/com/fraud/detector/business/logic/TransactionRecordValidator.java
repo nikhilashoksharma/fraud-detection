@@ -11,14 +11,14 @@ import org.grab.com.fraud.detector.exceptions.InvalidColumnFormatException;
 
 public class TransactionRecordValidator {
 
-	private static final String TIMESTAMP_FORMAT = "yyyy-MM-dd hh:mm:ss";
+	public static final String TIMESTAMP_FORMAT = "yyyy-MM-dd hh:mm:ss";
 
 	private static final int expectedNumberOfColumns = 8;
 
 	private static final Pattern PATTERN = Pattern
 			.compile("^(([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\.){3}([01]?\\d\\d?|2[0-4]\\d|25[0-5])$");
 
-	private static SimpleDateFormat expectedTimestampFormat = new SimpleDateFormat(TIMESTAMP_FORMAT);
+	public static final SimpleDateFormat expectedTimestampFormat = new SimpleDateFormat(TIMESTAMP_FORMAT);
 
 	public static boolean isValidNumberOfColumns(String record, String[] splittedRecord) throws IncompleteRecordException {
 		if (splittedRecord.length == expectedNumberOfColumns)
